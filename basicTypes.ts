@@ -10,4 +10,4 @@ function twoStrings(str1: string, str2: string){
     return str1 + str2
 }
 
-console.log(twoStrings(5, 'lolo'))
+console.log(twoStrings('5', 'lolo'))
