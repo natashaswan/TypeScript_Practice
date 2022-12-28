@@ -1,13 +1,21 @@
-const testObj: {name: string; age: string; hobby: string[]; info: any[]} = {
+const testObj: {name: string; age: string; hobbies: string[]; info: any[], role: [string, number]; password: (string | number)} = {
     name: 'Anna',
     age: '14',
-    hobby: ['reading', 'cooking'],
+    hobbies: ['reading', 'cooking'],
     info: ['kind girl', 14, ['school', 'cars']],
+    role: ['actress', 2],
+    password: '234',
 }
-console.log(testObj.hobby)
+console.log(testObj.hobbies)
 
 let someVar: string;
 
 //someVar = 5; error
 
-//accessing method of specific type 
+//access method of specific type in IDE when type is assigned
+for (let hobby of testObj.hobbies){
+    console.log(hobby)
+}
+
+//Tuples - fixed length Array;
+
