@@ -1,9 +1,12 @@
-const testObj: {name: string; age: string; hobbies: string[]; info: any[], role: [string, number]; password: (string | number)} = {
+//enum
+enum Role { ADMIN =5, READ_ONLY, AUTHOR }; //numbers are incremented started from 5
+
+const testObj: {name: string; age: string; hobbies: string[]; info: any[], role: Role; password: (string | number)} = {
     name: 'Anna',
     age: '14',
     hobbies: ['reading', 'cooking'],
     info: ['kind girl', 14, ['school', 'cars']],
-    role: ['actress', 2],
+    role: Role.ADMIN,
     password: '234',
 }
 console.log(testObj.hobbies)
@@ -18,4 +21,8 @@ for (let hobby of testObj.hobbies){
 }
 
 //Tuples - fixed length Array;
+
+
+
+
 
