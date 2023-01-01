@@ -29,4 +29,4 @@ const combineAndHandle = (first: number,  second: number, handler: (num: number)
     let result = first + second;
     handler(result)
 }
-console.log(combineAndHandle(3, 4, (result)=>{return result + 5}))
+console.log(combineAndHandle(3, 4, (result)=>{return result}))
